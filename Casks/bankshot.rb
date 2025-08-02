@@ -5,7 +5,7 @@ cask "bankshot" do
 
   desc "Automatic SSH port forwarding and browser opening for remote development"
   homepage "https://github.com/phinze/bankshot"
-  version "0.1.0"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,23 +15,23 @@ cask "bankshot" do
 
   on_macos do
     on_intel do
-      url "https://github.com/phinze/bankshot/releases/download/v0.1.0/bankshot_darwin_x86_64.tar.gz"
-      sha256 "6aa065eba151afb89d2935d619db936deb971f4df65cad6723fbc5079679372a"
+      url "https://github.com/phinze/bankshot/releases/download/v0.2.0/bankshot_darwin_x86_64.tar.gz"
+      sha256 "cf13e760593d0c307c0a383cccca50f6bbb2bbe9deb2d345b5bc9063b06c830a"
     end
     on_arm do
-      url "https://github.com/phinze/bankshot/releases/download/v0.1.0/bankshot_darwin_arm64.tar.gz"
-      sha256 "4bed77f784dbfa87dab15f33e6a02d67a63f1206811cb99bb8856581fede2479"
+      url "https://github.com/phinze/bankshot/releases/download/v0.2.0/bankshot_darwin_arm64.tar.gz"
+      sha256 "de0cbd3ffe9a6d1981eb8154d000734d70718e144c0cda4db0cb7e087e88434c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/phinze/bankshot/releases/download/v0.1.0/bankshot_linux_x86_64.tar.gz"
-      sha256 "a1644595b3553fd7a7c71c79aed5cc6862919bde5b07b0ec452cfe6d1436c46b"
+      url "https://github.com/phinze/bankshot/releases/download/v0.2.0/bankshot_linux_x86_64.tar.gz"
+      sha256 "e387ff079c341786342308e588adc00f7b8c2baeb39b186b41d1b5ea2ca97510"
     end
     on_arm do
-      url "https://github.com/phinze/bankshot/releases/download/v0.1.0/bankshot_linux_arm64.tar.gz"
-      sha256 "7abbfe36513ee76d6e1e66ccce95ac24648da778558bfc088ad292450e494c6a"
+      url "https://github.com/phinze/bankshot/releases/download/v0.2.0/bankshot_linux_arm64.tar.gz"
+      sha256 "e7b5331232f43f518047c67048e9d5c07e8e87e6b62d857c91d49024f05c0452"
     end
   end
 
