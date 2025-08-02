@@ -4,7 +4,7 @@ cask "bankshot" do
 
   desc "Automatic SSH port forwarding and browser opening for remote development"
   homepage "https://github.com/phinze/bankshot"
-  version "0.2.1"
+  version "0.2.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,23 +14,23 @@ cask "bankshot" do
 
   on_macos do
     on_intel do
-      url "https://github.com/phinze/bankshot/releases/download/v0.2.1/bankshot_darwin_x86_64.tar.gz"
-      sha256 "9aead9603b78a18b1b1d7ee2b70f721fa91f42290ac1748867c6a3f98d6e7995"
+      url "https://github.com/phinze/bankshot/releases/download/v0.2.2/bankshot_darwin_x86_64.tar.gz"
+      sha256 "5a31e41499d22fbb7d5f2ff9656b05d6d75c415a693c3f5b78d34984e1f031cd"
     end
     on_arm do
-      url "https://github.com/phinze/bankshot/releases/download/v0.2.1/bankshot_darwin_arm64.tar.gz"
-      sha256 "c2a17a45d3761baf69379e0519c53325d496ab7f9ce748ff87048e9985f2202c"
+      url "https://github.com/phinze/bankshot/releases/download/v0.2.2/bankshot_darwin_arm64.tar.gz"
+      sha256 "5a1c6387371b299e52ac50e98e98fce53ea82b3e77b4d396603fb977b74cbc88"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/phinze/bankshot/releases/download/v0.2.1/bankshot_linux_x86_64.tar.gz"
-      sha256 "29e932e5d84ccba6a53d09882dee5e693f4bda610f85e3b05cec2a80917a2b2f"
+      url "https://github.com/phinze/bankshot/releases/download/v0.2.2/bankshot_linux_x86_64.tar.gz"
+      sha256 "f61c0687af1037418c34ceafb59b722b18cf4ade8b1daf64e0f8803671f6cfd6"
     end
     on_arm do
-      url "https://github.com/phinze/bankshot/releases/download/v0.2.1/bankshot_linux_arm64.tar.gz"
-      sha256 "b0a8eda0a17992e941db5a59e958bb688bf67757060d685f2411d8b7a9e3fbd4"
+      url "https://github.com/phinze/bankshot/releases/download/v0.2.2/bankshot_linux_arm64.tar.gz"
+      sha256 "6d5e191e1fc26a0e7b3b235f2457fb69f650d2e8698cf7f81e696013513e8493"
     end
   end
 
@@ -40,6 +40,12 @@ cask "bankshot" do
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/bankshotd"]
     end
   end
+
+  service "run [opt_bin/"bankshotd"]
+keep_alive true
+log_path var/"log/bankshotd.log"
+error_log_path var/"log/bankshotd.error.log"
+"
 
   # No zap stanza required
 end
