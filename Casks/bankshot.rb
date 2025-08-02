@@ -15,23 +15,23 @@ cask "bankshot" do
 
   on_macos do
     on_intel do
-      url "https://github.com/phinze/bankshot/releases/download/v0.1.0/bankshot_Darwin_x86_64.tar.gz"
-      sha256 "02de358048a326e4835952bb85c0e075804a812f66d164126ad74231ec447bdd"
+      url "https://github.com/phinze/bankshot/releases/download/v0.1.0/bankshot_darwin_x86_64.tar.gz"
+      sha256 "6aa065eba151afb89d2935d619db936deb971f4df65cad6723fbc5079679372a"
     end
     on_arm do
-      url "https://github.com/phinze/bankshot/releases/download/v0.1.0/bankshot_Darwin_arm64.tar.gz"
-      sha256 "7102d811f4daa62b5693db5999774d7a804501a9cdb010d7b9b49633654eb86c"
+      url "https://github.com/phinze/bankshot/releases/download/v0.1.0/bankshot_darwin_arm64.tar.gz"
+      sha256 "4bed77f784dbfa87dab15f33e6a02d67a63f1206811cb99bb8856581fede2479"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/phinze/bankshot/releases/download/v0.1.0/bankshot_Linux_x86_64.tar.gz"
-      sha256 "219ab0e9889a624a541662f8b33575bbf9bbec3c7ca508d3d02479e7c0ae86f3"
+      url "https://github.com/phinze/bankshot/releases/download/v0.1.0/bankshot_linux_x86_64.tar.gz"
+      sha256 "a1644595b3553fd7a7c71c79aed5cc6862919bde5b07b0ec452cfe6d1436c46b"
     end
     on_arm do
-      url "https://github.com/phinze/bankshot/releases/download/v0.1.0/bankshot_Linux_arm64.tar.gz"
-      sha256 "cab73b2539f15bace3c554a1163d10dd31e2c137a0ed24677d957fdf95015d74"
+      url "https://github.com/phinze/bankshot/releases/download/v0.1.0/bankshot_linux_arm64.tar.gz"
+      sha256 "7abbfe36513ee76d6e1e66ccce95ac24648da778558bfc088ad292450e494c6a"
     end
   end
 
