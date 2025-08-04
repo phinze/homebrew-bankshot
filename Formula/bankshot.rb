@@ -5,13 +5,13 @@
 class Bankshot < Formula
   desc "Automatic SSH port forwarding and browser opening for remote development"
   homepage "https://github.com/phinze/bankshot"
-  version "0.2.3"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/phinze/bankshot/releases/download/v0.2.3/bankshot_darwin_x86_64.tar.gz"
-      sha256 "c3311ca8af8ad6d45e8751c409c9a78ec0dad3a5d816c0a49509713e685bee8c"
+      url "https://github.com/phinze/bankshot/releases/download/v0.3.0/bankshot_darwin_x86_64.tar.gz"
+      sha256 "c05898465fdc6e5918292708c4b9001a5916ed5977479263ec46218c82086e24"
 
       def install
         bin.install "bankshot"
@@ -19,8 +19,8 @@ class Bankshot < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/phinze/bankshot/releases/download/v0.2.3/bankshot_darwin_arm64.tar.gz"
-      sha256 "38f2d3493bc785541e29c01cdbd9f8a19140bf78b4ceb021080c2dabcd39d2e3"
+      url "https://github.com/phinze/bankshot/releases/download/v0.3.0/bankshot_darwin_arm64.tar.gz"
+      sha256 "3d83475a4e57529095b9783081f79bb424516bd5527906bba86a4460f19a283b"
 
       def install
         bin.install "bankshot"
@@ -31,16 +31,16 @@ class Bankshot < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/phinze/bankshot/releases/download/v0.2.3/bankshot_linux_x86_64.tar.gz"
-      sha256 "820c5589930d51d25bddc1b4d9f1917528f9d5a660fccb27bac9a61f726757e0"
+      url "https://github.com/phinze/bankshot/releases/download/v0.3.0/bankshot_linux_x86_64.tar.gz"
+      sha256 "e9804d7059ea96333cb5b3fdbcf9edf41d73cd8559e2a66536dd2a705ae38a54"
       def install
         bin.install "bankshot"
         bin.install "bankshotd"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/phinze/bankshot/releases/download/v0.2.3/bankshot_linux_arm64.tar.gz"
-      sha256 "a6b39b5c25f455921122ddb2b33cae56340378c85344998d172ac73d79a24bdc"
+      url "https://github.com/phinze/bankshot/releases/download/v0.3.0/bankshot_linux_arm64.tar.gz"
+      sha256 "b56295560d02ef5846650019d8bc52e990bdda8a65b6861a2a5d7579337734af"
       def install
         bin.install "bankshot"
         bin.install "bankshotd"
