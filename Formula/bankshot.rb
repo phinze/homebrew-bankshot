@@ -11,7 +11,7 @@ class Bankshot < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/phinze/bankshot/releases/download/v0.4.0/bankshot_darwin_x86_64.tar.gz"
-      sha256 "fc9a3a9d82cccb06f56744d413adfce001bafad9559dfcd002d591cd7b1ced23"
+      sha256 "0ddf46447e623b1d0fd9f6424031bd3d760edf2df8dd71131f5e01f73cee5f94"
 
       def install
         bin.install "bankshot"
@@ -20,7 +20,7 @@ class Bankshot < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/phinze/bankshot/releases/download/v0.4.0/bankshot_darwin_arm64.tar.gz"
-      sha256 "ea75d5d274cc51f3ea9be5ca9609016fdc6a1a152a1ad445bf3ed06f561bb53b"
+      sha256 "caba5cc1166085165bd93b2444c5a8ee39adee82f55adee6e11c3edb30380236"
 
       def install
         bin.install "bankshot"
@@ -32,7 +32,7 @@ class Bankshot < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/phinze/bankshot/releases/download/v0.4.0/bankshot_linux_x86_64.tar.gz"
-      sha256 "83c45ab07894d1e7211f86034c9493cab7e4d8a5d2e68409ef99b93b406cecb2"
+      sha256 "78e6793fa90b7ee1de9b3c85f1401b282f0dc27739cfdb1a9de7ead3b0920072"
       def install
         bin.install "bankshot"
         bin.install "bankshotd"
@@ -40,7 +40,7 @@ class Bankshot < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/phinze/bankshot/releases/download/v0.4.0/bankshot_linux_arm64.tar.gz"
-      sha256 "e902ec82270bec7981e6633e72d2cb69f0a60babaad4a8b6b851650569551cb2"
+      sha256 "8ae2c9119aefddfd3c2a3c662af3c007ca95534c4f8ca50c9743195140c76076"
       def install
         bin.install "bankshot"
         bin.install "bankshotd"
