@@ -5,13 +5,13 @@
 class Bankshot < Formula
   desc "Automatic SSH port forwarding and browser opening for remote development"
   homepage "https://github.com/phinze/bankshot"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/phinze/bankshot/releases/download/v0.3.0/bankshot_darwin_x86_64.tar.gz"
-      sha256 "c05898465fdc6e5918292708c4b9001a5916ed5977479263ec46218c82086e24"
+      url "https://github.com/phinze/bankshot/releases/download/v0.4.0/bankshot_darwin_x86_64.tar.gz"
+      sha256 "fc9a3a9d82cccb06f56744d413adfce001bafad9559dfcd002d591cd7b1ced23"
 
       def install
         bin.install "bankshot"
@@ -19,8 +19,8 @@ class Bankshot < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/phinze/bankshot/releases/download/v0.3.0/bankshot_darwin_arm64.tar.gz"
-      sha256 "3d83475a4e57529095b9783081f79bb424516bd5527906bba86a4460f19a283b"
+      url "https://github.com/phinze/bankshot/releases/download/v0.4.0/bankshot_darwin_arm64.tar.gz"
+      sha256 "ea75d5d274cc51f3ea9be5ca9609016fdc6a1a152a1ad445bf3ed06f561bb53b"
 
       def install
         bin.install "bankshot"
@@ -30,17 +30,17 @@ class Bankshot < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/phinze/bankshot/releases/download/v0.3.0/bankshot_linux_x86_64.tar.gz"
-      sha256 "e9804d7059ea96333cb5b3fdbcf9edf41d73cd8559e2a66536dd2a705ae38a54"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/phinze/bankshot/releases/download/v0.4.0/bankshot_linux_x86_64.tar.gz"
+      sha256 "83c45ab07894d1e7211f86034c9493cab7e4d8a5d2e68409ef99b93b406cecb2"
       def install
         bin.install "bankshot"
         bin.install "bankshotd"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/phinze/bankshot/releases/download/v0.3.0/bankshot_linux_arm64.tar.gz"
-      sha256 "b56295560d02ef5846650019d8bc52e990bdda8a65b6861a2a5d7579337734af"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/phinze/bankshot/releases/download/v0.4.0/bankshot_linux_arm64.tar.gz"
+      sha256 "e902ec82270bec7981e6633e72d2cb69f0a60babaad4a8b6b851650569551cb2"
       def install
         bin.install "bankshot"
         bin.install "bankshotd"
